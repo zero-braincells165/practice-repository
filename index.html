@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fahrenheit to Celcius</title>
+  <script>
+    function calculateC() {
+      // Get the values from the input fields
+      var f = parseFloat(document.getElementById('f').value);
+      
+      // Perform arithmetic addition
+      var result = 5/9*(f-32);
+      
+      // Display the result
+      document.getElementById('result').innerText = f + '°F is equal to ' + result + '°C';
+    }
+  </script>
+</head>
+<body>
+
+<h2>Fahrenheit to Celcius</h2>
+
+<form>
+    <label for="f">Fahrenheit:</label><br>
+    <input type="number" id="f" name="f"><br>
+    <button type="button" onclick="calculateC()">Calculate Celcius</button>   
+</form>
+
+<p id="result"></p>
+
+</body>
+</html>
